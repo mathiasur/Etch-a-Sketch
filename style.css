@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 400px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+    height: 10px;
+}
+
+.square {
+    flex: 1;
+    border: 1px solid black;
+    border-bottom: 0;
+    border-right: 0;
+}
