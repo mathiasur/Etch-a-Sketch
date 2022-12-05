@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -8,18 +11,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 40px;
 }
 
-.container {
+.sketch {
     display: flex;
     flex-direction: column;
     width: 500px;
     height: 400px;
-}
-
-.borders {
     border-bottom: 1px solid black;
     border-right: 1px solid black;
+}
+
+.sk-border {
+    border: 1px solid black;
 }
 
 .row {
@@ -30,7 +35,51 @@ body {
 
 .pixel {
     flex: 1;
+}
+
+.px-border {
     border: 1px solid black;
     border-bottom: 0;
     border-right: 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    align-items: center;
+    gap: 15px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+button, fieldset{
+    border: 0;
+    background-color: lightgray;
+    width: 90%;
+    height: 10%;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    scale: 1.1;
+    transition: all 0.4s;
+}
+
+#size {
+    cursor: pointer;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20%;
+    gap: 10px;
+}
+
+label {
+    margin-top: 10px;
 }
